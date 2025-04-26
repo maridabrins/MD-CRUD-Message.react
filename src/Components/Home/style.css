@@ -1,0 +1,14 @@
+body{
+    background-color: #17202A;
+}
+header{
+    display: flex;
+    margin: 36px 192px;
+    gap: 34px;
+}
+h1{
+    color: #1D9BF0;
+    font-size: 48px;
+    font-family: "Jersey 10";
+    font-weight: 100;
+}
