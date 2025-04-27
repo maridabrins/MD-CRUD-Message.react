@@ -5,6 +5,9 @@ import Perfil from "../../assets/images/Perfil.svg"
 import Background from "../../assets/images/Background.svg"
 
 export default function Home(){
+
+   
+
     return (
         <>
         <header>
@@ -26,9 +29,31 @@ export default function Home(){
             </div>
 
             <div className="mensagem">
-                <h2>Adicionar nova mensagem</h2>
-                <button>+</button>
+                <button> Adicionar nova mensagem +</button>
             </div>
+
+            <dialog>
+                <div className="modal">
+                    <div className="modal-content">
+                        <h2>Nova mensagem</h2>
+
+                        <div className="info-modal">
+
+                            <label for="privacidade">Privacidade</label>
+                            <select id="privacidade" name="privacidade">
+                                <option value="publico">Público</option>
+                                <option value="privado">Privado</option>
+                            </select>
+                           
+                            <label for="titulo">Titulo</label>
+                            <input name="titulo" id="titulo" required="true" maxLength="30"/>
+
+                            <label for="mensagem">Mensagem (250 caracteres)</label>
+                            <input name="mensagem" id="mensagem" required="true" maxLength="250"/>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
 
             <div className="card">
                 <div className="card-container">
@@ -39,10 +64,15 @@ export default function Home(){
                             <p>Publicado em 26/04/2025</p>
                         </div>
                         
-                        <p className="active">...</p>
+                        <label for="acoes">...</label>
+                        <select name="acoes" id="acoes">
+                            <option value="editar">Editar</option>
+                            <option value="excluir">Excluir</option>
+                        </select>
                     </div>
 
                     <div className="mensagem-content">
+                        <h3>Titulo</h3>
                         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                     </div>
                 </div>
