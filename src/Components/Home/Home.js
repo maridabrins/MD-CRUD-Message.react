@@ -13,13 +13,16 @@ export default function Home(){
         </header>
 
         <section className="perfil">
-            <div>
-                 <img src= {Background} className="background" alt="fundo colorido com arvores"/>
-            </div>
-            <div className="usuario">
-                <img src= {Perfil} className="foto de perfil" alt="foto mulher feliz"/>
+        
+           <div className="perfil-content">
+                <img src= {Background} className="background" alt="fundo colorido com arvores"/>
+           <div className="usuario">
+                <img src= {Perfil} className="foto-perfil" alt="foto mulher feliz"/>
+                <div className="info-user">
                 <h2>Usuario Feliz</h2>
                 <p>@User</p>
+                </div>
+                
             </div>
 
             <div className="mensagem">
@@ -28,18 +31,25 @@ export default function Home(){
             </div>
 
             <div className="card">
+                <div className="card-container">
+                    <div className="info-card">
+                        <img src= {Perfil} className="foto-perfil" alt="foto mulher feliz"/>
+                        <div className="user-content">
+                            <h2>Usuario Feliz</h2>
+                            <p>Publicado em 26/04/2025</p>
+                        </div>
+                        
+                        <p className="active">...</p>
+                    </div>
 
-                <div className="info-usuario">
-                <img src= {Perfil} className="foto de perfil" alt="foto mulher feliz"/>
-                <h2>Usuario Feliz</h2>
-                <p>Publicado em 26/04/2025</p>
-                <p className="active">...</p>
+                    <div className="mensagem-content">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
                 </div>
-
-                <div className="card-content">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                </div>
+                
             </div>
+           </div>
+            
         </section>
         </>
     );
