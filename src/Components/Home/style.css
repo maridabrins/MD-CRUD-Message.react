@@ -56,9 +56,6 @@ section{
  .mensagem {
     display: flex;
     justify-content: center;
-    gap: 9px;
-    color: #949494;
-    font-family: "Inter";
  }
 
  .mensagem button{
@@ -67,10 +64,11 @@ section{
     background: none;
     color: #949494;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
+    font-family: "Inter";
  }
 
- .mensagem:hover{
+ .mensagem button:hover{
     cursor: pointer;
  }
 
@@ -121,7 +119,7 @@ section{
  }
 
 
- .active{
+ .card label{
     position: absolute;
     top: 15px;
     right: 25px;
@@ -129,14 +127,28 @@ section{
     font-weight: 900;
  }
 
+ .card select{
+    display: none;
+ }
+
  .mensagem-content{
     margin-top: 5px ;
     font-family: "Inter";
-    font-size: 14px ;
     font-weight: 900;
     color: #FFFFFF;
     margin-left: 45px;
     width: 539px;
+ }
+
+ .mensagem-content h3{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 900;
+    margin: 5px 0;
+ }
+
+ .mensagem-content p{
+    font-size: 14px;
  }
 
  @media (max-width: 834px){
@@ -237,4 +249,6 @@ section{
         margin-left: 35px;
         font-size: 13px;
     }
+
+    
  }
