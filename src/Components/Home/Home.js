@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import "./style.css"
 import Logo from "../../assets/images/Logo.svg"
 import Perfil from "../../assets/images/Perfil.svg"
@@ -6,7 +6,17 @@ import Background from "../../assets/images/Background.svg"
 
 export default function Home(){
 
-   
+    // Hooks para abrir modal
+    useEffect(() => {
+        const adicionarNova = document.querySelector(".mensagem button");
+        const modal = document.querySelector("dialog");
+
+        if (adicionarNova && modal) {
+            adicionarNova.onclick = function() {
+                modal.showModal();
+            };
+        }
+    }, []);
 
     return (
         <>
@@ -46,10 +56,10 @@ export default function Home(){
                             </select>
                            
                             <label for="titulo">Titulo</label>
-                            <input name="titulo" id="titulo" required="true" maxLength="30"/>
+                            <input name="titulo" id="titulo" required maxLength="30"/>
 
                             <label for="mensagem">Mensagem (250 caracteres)</label>
-                            <input name="mensagem" id="mensagem" required="true" maxLength="250"/>
+                            <textarea name="mensagem" id="mensagem" required maxLength="250"></textarea>
                         </div>
                     </div>
                 </div>
