@@ -25,16 +25,116 @@ section{
     justify-content: center;
 }
 
-
-.perfil{
-   
- 
-}
 .perfil-content{
     background-color: #3A444C;
     border-radius: 10px;
+    padding-bottom:23px;
 }
 .usuario{
     display: flex;
     margin-left: 47px;
+    gap: 11px;
 }
+.usuario img{
+    position: relative;
+    bottom: 40px;
+}
+.info-user{
+    font-family: "Inter";
+    font-weight: 900;
+}
+.info-user h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.info-user p{
+    margin-top: 4px;
+    font-size: 14px;
+    color: #949494 ;
+}
+ .mensagem {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    color: #949494;
+    font-family: "Inter";
+ }
+
+ .mensagem button{
+    position: relative;
+    top: 3px;
+    background: none;
+    color: #949494;
+    font-size: 16px;
+    font-weight: 600;
+ }
+
+ .mensagem:hover{
+    cursor: pointer;
+ }
+
+ .card{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+ }
+
+ .card-container {
+    background-color: #17202A;
+    margin-top: 50px;
+    position: relative;
+    padding: 13px 15px;
+    width: 669px;
+    
+ }
+
+ .info-card {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+ }
+ .info-card img{
+    width: 39px;
+    height: 39px;
+ }
+ .user-content{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .user-content h2, .user-content p{
+    font-family: "Inter";
+    font-weight: 900;
+    margin-top: 3px;
+ }
+
+ .user-content h2{
+    margin-top: 3px;
+    font-size: 14px;
+    color: #FFFFFF;
+ }
+ .user-content p{
+    font-size: 10px ;
+    color: #949494  ;
+ }
+
+
+ .active{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #FFFFFF;
+    font-weight: 900;
+ }
+
+ .mensagem-content{
+    margin-top: 5px ;
+    font-family: "Inter";
+    font-size: 14px ;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-left: 45px;
+    width: 539px;
+ }
