@@ -138,3 +138,103 @@ section{
     margin-left: 45px;
     width: 539px;
  }
+
+ @media (max-width: 834px){
+    h1{
+        font-size: 37px;
+    }
+
+    .usuario img{
+        width: 120px;
+        height: 120px;
+    }
+    .info-user h2 {
+        font-size: 25px;
+    }
+    .info-user p{
+        font-size: 20px;
+    }
+
+    .mensagem button{
+        font-size: 25px;
+    }
+
+    .info-card img{
+        width: 69px;
+        height: 69px;
+    }
+    .user-content h2{
+        font-size: 22px;
+    }
+    .user-content p{
+        font-size: 15px;
+    }
+
+    .mensagem-content{
+        font-size: 22px;
+        margin-left: 75px;
+        width: 560px;
+    }
+ }
+
+ @media (max-width: 480px){
+    header{
+        justify-content: center;
+        margin: 40px 30px;
+    }
+    h1{
+        font-size: 29px;
+    }
+
+    .perfil-content img{
+        width: 100%;
+    }
+
+    .usuario{
+        margin-bottom: 0px;
+    }
+    .usuario img{
+        width: 59px;
+        height: 59;
+        
+        bottom: 60px;
+    }
+
+    .info-user h2{
+        font-size: 14px;
+    }
+    .info-user p{
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .mensagem{
+        font-size: 14px;
+    }
+
+    .mensagem button{
+        font-size: 20px;
+    }
+
+    .card-container{
+        width: 360px;
+    }
+
+    .info-card img{
+        width: 29px;
+        height: 29px;
+    }
+
+    .user-content h2{
+        font-size: 13px;
+    }
+
+    .user-content p{
+        font-size: 9px;
+    }
+    .mensagem-content{
+        width: 300px;
+        margin-left: 35px;
+        font-size: 13px;
+    }
+ }
