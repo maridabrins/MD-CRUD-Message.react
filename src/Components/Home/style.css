@@ -238,11 +238,13 @@ section{
     color: #FFFFFF;
     font-weight: 900;
     cursor: pointer;
+    outline: none;
  }
 
 .dropdown{
     position: relative;
-    left: 455px; 
+    left: 420px; 
+    top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -250,10 +252,9 @@ section{
 .dropdown button{
     background-color: #949494;
     color: #FFFFFF;
-    font-size: 13px;
-    border-radius: 5px;
-    padding: 5px 2px;
-    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 5px 10px;
     cursor: pointer;
 }
 

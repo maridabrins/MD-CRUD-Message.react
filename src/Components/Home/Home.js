@@ -9,7 +9,7 @@ export default function Home() {
     // Variaveis dos Hooks que cuidam do ESTADO 
   const [mensagens, setMensagens] = useState([]); /* para criar uma "lista" de mensagens */
   const [mensagemEditando, setMensagemEditando] = useState(null); /* para editar a mensagem e salavr */
-  const [menuAberto, setMenuAberto] = useState(false); /* para abrir o dropdown com o editar e excluir */
+  const [menuAberto, setMenuAberto] = useState(null); /* para abrir o dropdown com o editar e excluir */
 
   // Carregar as mensagens do LocalStorage e converter os dados recebidos
   useEffect(() => {
@@ -50,6 +50,26 @@ export default function Home() {
     setMensagens(novasMensagens);
     salvarMensagem(novasMensagens);
   };
+
+  const handleAcaoClick = (id) => {
+    setMenuAberto(menuAberto === id ? null : id); // Se o menu estiver aberto, fecha. Se não, abre o menu do card específico.
+  };
+
+  useEffect(() => {
+    const handleKeydown = (event) => {
+      if (event.key === "Escape") { // Se a tecla for "Esc"
+        setMenuAberto(null); // Fecha o menu
+      }
+    };
+  
+    // Adiciona o evento de teclado quando o componente é montado
+    window.addEventListener("keydown", handleKeydown);
+  
+    // Remove o evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  }, []);
 
   // Função para editar ou adicionar mensagem
   const handleAdicionarMensagem = () => {
@@ -159,37 +179,36 @@ export default function Home() {
 
           {/* Lista de mensagens */}
           {mensagensVisiveis.map((mensagem) => (
-            <div className="card" key={mensagem.id}>
-              <div className="card-container">
-                <div className="info-card">
-                  <img src={Perfil} className="foto-perfil" alt="foto mulher feliz" />
-                  <div className="user-content">
-                    <h2>Usuario Feliz</h2>
-                    <p>Publicado em {mensagem.dataCriacao}</p>
-                  </div>
-                <div className="acoes-container">
-                     {/* Botão para abrir menu de ações */}
-                  <button id="acoes" onClick={() => setMenuAberto(!menuAberto)}>...</button>
+  <div className="card" key={mensagem.id}>
+    <div className="card-container">
+      <div className="info-card">
+        <img src={Perfil} className="foto-perfil" alt="foto mulher feliz" />
+        <div className="user-content">
+          <h2>Usuario Feliz</h2>
+          <p>Publicado em {mensagem.dataCriacao}</p>
+        </div>
+        <div className="acoes-container">
+          {/* Botão para abrir menu de ações */}
+          <button id="acoes" onClick={() => handleAcaoClick(mensagem.id)}>...</button>
 
-{/* Dropdown com as opções de editar e excluir */}
-{menuAberto && (
-  <div className="dropdown">
-    <button onClick={() => handleAcaoMensagem("editar", mensagem.id)}>Editar</button>
-    <button onClick={() => handleAcaoMensagem("excluir", mensagem.id)}>Excluir</button>
-  </div>
-)}
-                </div>
-                 
-                </div>
-
-                {/* Conteúdo da mensagem */}
-                <div className="mensagem-content">
-                  <h3>{mensagem.titulo}</h3>
-                  <p>{mensagem.mensagem}</p>
-                </div>
-              </div>
+          {/* Dropdown com as opções de editar e excluir, visível apenas se o menu estiver aberto para o card específico */}
+          {menuAberto === mensagem.id && (
+            <div className="dropdown">
+              <button onClick={() => handleAcaoMensagem("editar", mensagem.id)}>Editar</button>
+              <button onClick={() => handleAcaoMensagem("excluir", mensagem.id)}>Excluir</button>
             </div>
-          ))}
+          )}
+        </div>
+      </div>
+
+      {/* Conteúdo da mensagem */}
+      <div className="mensagem-content">
+        <h3>{mensagem.titulo}</h3>
+        <p>{mensagem.mensagem}</p>
+      </div>
+    </div>
+  </div>
+))}
         </div>
       </section>
     </>
