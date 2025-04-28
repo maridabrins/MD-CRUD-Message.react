@@ -1,70 +1,122 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- MODELO PROJETO FINALIZADO -->
+<h1 align="center"> 
+	  🚀✅ CRUD-Message - Concluído ✅🚀
+</h1>
 
-## Available Scripts
+<!-- ---------------------------------------------------------------------- -->
 
-In the project directory, you can run:
+<!-- MODELO MENU DE NAVEGAÇÃO -->
+<p align="center">
+ <a href="#-descrição-do-entregável">Descrição do Entregável</a> •
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#-licença">Licença</a>
+</p>
 
-### `npm start`
+<!-- ---------------------------------------------------------------------- -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- MODELO DE DESCRIÇÃO -->
+## 📄 Descrição do entregável
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- EXEMPLO DE DESCRIÇÃO DE UM PROJETO: -->
+- 🌐 public
+  - 📄 index.html
+- 🗂 src
+  - 📂 Components
+    - 📂 Home
+        - 📄 Home.js
+        - 🎨 style.css
+  - 📂 assets
+    - 📂 images
 
-### `npm test`
+- 📄 App.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- MODELO DESCRIÇÃO SOBRE O PROJETO: -->
+## 💻 Sobre o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- EXPLICA O MOTIVO DO PROJETO -->
+o CRUD Message trata-se de um gerenciador de mensagens que tem o objetivo de testar os conhecimentos adquiridos em React, JavaScript e HTML 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- EXEMPLO DE LAYOUT: -->
+## 🎨 Layout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- AQUI VOCÊ PASSA O CAMINHO DA IMAGEM -->
+![Tela](https://github.com/maridabrins/MD-CRUD-Message.react/blob/main/crudImage.PNG)<br>
+<!-- ---------------------------------------------------------------------- -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- MODELO DE COMO EXECUTAR O PROJETO -->
+## 🚀 Como executar o projeto
+1 - Baixar o Projeto (git clone)  <br>
+`https://github.com/maridabrins/MD-CRUD-Message.react.git`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2 - Navegue até o repósitorio <br>
+`cd crud-message` 
 
-## Learn More
+3 - Instalar dependências <br>
+`npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4 -  Inicie a aplicação <br>
+`npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Ou acesse por aqui
+Você também pode acessar clicando nesse link do Github Pages:
 
-### Code Splitting
+- [](https://maridabrins.github.io/MD-QuickFood/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- MODELO DE TECNOLOGIAS -->
+## 🛠 Tecnologias
 
-### Analyzing the Bundle Size
+<div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+  <img alt="icon-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" style="max-width:100%;"></img> 
+  <img  alt="icon-html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" style="max-width:100%;"></img>
+  <img  alt="icon-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" style="max-width:100%;"></img> 
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚙ Ferramentas: 
 
-### Making a Progressive Web App
+As seguintes ferramentas foram usadas na construção do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" height="40" alt="vscode logo" />
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge" height="40" alt="git logo" />
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="40" alt="github logo" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="40" alt="figma logo"  />
+</div>
 
-### Advanced Configuration
+<!-- MODELO DE COMO CONTRIBUIR PARA O PROJETO -->
+## 💪 Como contribuir para o projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- ---------------------------------------------------------------------- -->
 
-### `npm run build` fails to minify
+<!-- MODELO DE AUTOR-->
+## 🦸 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="(https://www.linkedin.com/in/mariana-dabrins-95a971328/)">
+Mariana Dabrins</a>
+ <br />
+ 
+[![Gmail Badge](https://img.shields.io/badge/-maridabrins@hotmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:maridabrins@hotmail.com)](mailto:maridabrins@hotmail.com)
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE LICENÇA -->
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito por Mariana Dabrins👋🏽 
+
