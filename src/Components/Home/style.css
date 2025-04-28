@@ -67,6 +67,7 @@ section{
     font-weight: 900;
     font-family: "Inter";
     outline: none;
+    margin-bottom: 50px;
  }
 
  .mensagem button:hover{
@@ -165,6 +166,20 @@ section{
     
  }
 
+#adicionar {
+    margin-top: 20px;
+    background-color: #17202A;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 18px;
+    width: 100px;
+    color: #D9D9D9;
+    font-weight: 900;
+    font-family: "Inter";
+    cursor: pointer;
+    font-size: 13px;
+ }
+
  .card{
     display: flex;
     justify-content: center;
@@ -174,7 +189,7 @@ section{
 
  .card-container {
     background-color: #17202A;
-    margin-top: 50px;
+    margin-top: 10px;
     position: relative;
     padding: 13px 15px;
     width: 669px;
@@ -185,6 +200,7 @@ section{
     display: flex;
     align-items: center;
     gap: 7px;
+    width: 100%;
  }
  .info-card img{
     width: 39px;
@@ -210,19 +226,36 @@ section{
     font-size: 10px ;
     color: #949494  ;
  }
+ .acoes-container {
+    display: flex; 
+}
 
 
- .card label{
-    position: absolute;
-    top: 15px;
-    right: 25px;
+ #acoes{
+    position: relative;
+    left: 450px;
+    background: none;
     color: #FFFFFF;
     font-weight: 900;
+    cursor: pointer;
  }
 
- .card select{
-    display: none;
- }
+.dropdown{
+    position: relative;
+    left: 455px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.dropdown button{
+    background-color: #949494;
+    color: #FFFFFF;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 5px 2px;
+    margin-top: 2px;
+    cursor: pointer;
+}
 
  .mensagem-content{
     margin-top: 5px ;
