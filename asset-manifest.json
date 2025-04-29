@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MD-CRUD-Message.react/static/css/main.b358ad7e.css",
+    "main.js": "/MD-CRUD-Message.react/static/js/main.32bfaf4e.js",
+    "static/js/453.724fafa0.chunk.js": "/MD-CRUD-Message.react/static/js/453.724fafa0.chunk.js",
+    "index.html": "/MD-CRUD-Message.react/index.html",
+    "main.b358ad7e.css.map": "/MD-CRUD-Message.react/static/css/main.b358ad7e.css.map",
+    "main.32bfaf4e.js.map": "/MD-CRUD-Message.react/static/js/main.32bfaf4e.js.map",
+    "453.724fafa0.chunk.js.map": "/MD-CRUD-Message.react/static/js/453.724fafa0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b358ad7e.css",
+    "static/js/main.32bfaf4e.js"
+  ]
+}
