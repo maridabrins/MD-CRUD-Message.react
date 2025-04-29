@@ -49,7 +49,7 @@ o CRUD Message trata-se de um gerenciador de mensagens que tem o objetivo de tes
 ## 🎨 Layout
 
 <!-- AQUI VOCÊ PASSA O CAMINHO DA IMAGEM -->
-![Tela](https://github.com/maridabrins/MD-CRUD-Message.react/blob/main/crudImage.PNG)<br>
+![Tela](https://github.com/maridabrins/MD-CRUD-Message.react/blob/main/crud.PNG)<br>
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE COMO EXECUTAR O PROJETO -->
