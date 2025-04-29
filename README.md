@@ -28,10 +28,10 @@
 - 🗂 src
   - 📂 Components
     - 📂 Home
-        - 📄 Home.js
-        - 🎨 style.css
-  - 📂 assets
-    - 📂 images
+        - 📄 MessageForm.js
+        - 📄 MessageTable.js
+  - 📂 Services
+  
 
 - 📄 App.js
 
