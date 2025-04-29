@@ -1,8 +1,8 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import { Container, Alert } from 'react-bootstrap';
-import MessageForm from './Components/MessageForm';
-import MessageTable from './Components/MessageTable';
+import MessageForm from './Components/MessageForm.js';
+import MessageTable from './Components/MessageTable.js';
 import { loadMessages, saveMessages } from './services/storageService'; // Importando o serviço
 
 function App() {
